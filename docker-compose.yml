@@ -1,0 +1,10 @@
+version: "3"
+services:
+  bot_discord:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    # restart:
+    #   always
+    command:
+      "python"
